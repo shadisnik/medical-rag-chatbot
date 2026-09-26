@@ -1,0 +1,12 @@
+.venv
+.git
+.env
+.env.*
+__pycache__
+*.pyc
+backups
+local_backups
+data
+results
+backend_debug.log
+import.log
