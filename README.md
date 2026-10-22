@@ -224,3 +224,13 @@ This work evaluates information retrieval and answer generation in a medical QA 
 The Safety Triage component is rule-based and has not been clinically validated. The framework does not establish clinical safety or clinical effectiveness.
 
 Prospective evaluation using real-world clinical data and independent clinical validation would be required before any deployment in patient care.
+
+### Table 6 - Statistical Reproduction
+
+The statistical results can be reproduced using the four saved 800-question prediction files.
+Place the files in results/evaluation/ and run:
+
+    python scripts/evaluation/reproduce_table6_statistics.py
+
+The script computes paired differences, 95% cluster bootstrap confidence intervals, and Holm-adjusted p-values without rerunning the language models.
+The prediction files are required separately and are not currently included in this repository.
